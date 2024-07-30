@@ -1,4 +1,4 @@
-# homework
+# Homework Challenge
 
 Homework challenge for Griffin interview.
 
