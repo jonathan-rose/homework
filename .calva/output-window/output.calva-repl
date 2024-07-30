@@ -1,0 +1,1249 @@
+(split-name ((csv-data-to-map (read-csv-file csv-path))))
+; Execution error (ClassCastException) at homework.core/eval10815 (form-init3889653878003743436.clj:1).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> (proc1 csv-path)
+; Execution error (ArityException) at homework.core/proc1 (form-init3889653878003743436.clj:53).
+; Wrong number of args (0) passed to: homework.core/read-csv-file
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> (proc1 csv-path)
+({:Name "Fergus Deleon", :Email "fergus@griffintest.co.uk"}
+ {:Name "Eve Avila", :Email "eve@griffintest.co.uk"}
+ {:Name "Khadija Velasquez", :Email "khadija@griffintest.co.uk"}
+ {:Name "Sophia Lyons", :Email "sophia@griffintest.co.uk"}
+ {:Name "Salma West", :Email "salma@griffintest.co.uk"}
+ {:Name "Micheal Mcneil", :Email "micheal@griffintest.co.uk"}
+ {:Name "Aurora Olson", :Email "aurora@griffintest.co.uk"}
+ {:Name "Robin Edwards", :Email "robin@griffintest.co.uk"}
+ {:Name "Sarah Ryan", :Email "sarah@griffintest.co.uk"}
+ {:Name "Aarav O'Reilly", :Email "aarav@griffintest.co.uk"}
+ {:Name "Nancy May", :Email "nancy@griffintest.co.uk"}
+ {:Name "Tiffany Pace", :Email "tiffany@griffintest.co.uk"}
+ {:Name "Lily-May Bass", :Email "lily@griffintest.co.uk"}
+ {:Name "Aamina Pope", :Email "aamina@griffintest.co.uk"}
+ {:Name "Michelle Brown", :Email "michelle@griffintest.co.uk"}
+ {:Name "Bertie Leblanc", :Email "bertie@griffintest.co.uk"}
+ {:Name "Coral Tucker", :Email "coral@griffintest.co.uk"}
+ {:Name "Nikodem Mccarthy", :Email "nikodem@griffintest.co.uk"})
+clj꞉homework.core꞉> (split-name (first (proc1 csv-path)))
+{:Email "fergus@griffintest.co.uk", :FirstName "Fergus", :LastName "Deleon"}
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> (proc1 csv-path)
+; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> (read-json-file json-path)
+({:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk"}
+ {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk"}
+ {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk"}
+ {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk"}
+ {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk"}
+ {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk"}
+ {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk"}
+ {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk"}
+ {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk"}
+ {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk"}
+ {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk"}
+ {:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk"}
+ {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk"}
+ {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk"}
+ {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk"}
+ {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk"}
+ {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk"})
+clj꞉homework.core꞉> 
+#'homework.core/transform-map
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> (proc1 csv-path)
+; Execution error (ClassCastException) at homework.core/transform-map (form-init3889653878003743436.clj:58).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.Map$Entry (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.Map$Entry is in module java.base of loader 'bootstrap')
+clj꞉homework.core꞉> 
+clojure.core/fn (core.clj:6899)
+clojure.core.protocols/fn (protocols.clj:168)
+clojure.core.protocols/fn (protocols.clj:124)
+clojure.core.protocols/fn (protocols.clj:19)
+clojure.core.protocols/seq-reduce (protocols.clj:31)
+clojure.core.protocols/fn (protocols.clj:75)
+clojure.core.protocols/fn (protocols.clj:13)
+clojure.core/reduce (core.clj:6886)
+clojure.core/fn (core.clj:6888)
+clojure.core.protocols/fn (protocols.clj:175)
+clojure.core/reduce-kv (core.clj:6919)
+homework.core/transform-map (form-init3889653878003743436.clj:58)
+homework.core/proc1 (form-init3889653878003743436.clj:51)
+homework.core/eval10834 (form-init3889653878003743436.clj:59)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:115)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:150)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:1583)
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> 
+#'homework.core/transform-map
+clj꞉homework.core꞉> (proc1 csv-path)
+({:Name "Fergus Deleon", :Email "fergus@griffintest.co.uk"}
+ {:Name "Eve Avila", :Email "eve@griffintest.co.uk"}
+ {:Name "Khadija Velasquez", :Email "khadija@griffintest.co.uk"}
+ {:Name "Sophia Lyons", :Email "sophia@griffintest.co.uk"}
+ {:Name "Salma West", :Email "salma@griffintest.co.uk"}
+ {:Name "Micheal Mcneil", :Email "micheal@griffintest.co.uk"}
+ {:Name "Aurora Olson", :Email "aurora@griffintest.co.uk"}
+ {:Name "Robin Edwards", :Email "robin@griffintest.co.uk"}
+ {:Name "Sarah Ryan", :Email "sarah@griffintest.co.uk"}
+ {:Name "Aarav O'Reilly", :Email "aarav@griffintest.co.uk"}
+ {:Name "Nancy May", :Email "nancy@griffintest.co.uk"}
+ {:Name "Tiffany Pace", :Email "tiffany@griffintest.co.uk"}
+ {:Name "Lily-May Bass", :Email "lily@griffintest.co.uk"}
+ {:Name "Aamina Pope", :Email "aamina@griffintest.co.uk"}
+ {:Name "Michelle Brown", :Email "michelle@griffintest.co.uk"}
+ {:Name "Bertie Leblanc", :Email "bertie@griffintest.co.uk"}
+ {:Name "Coral Tucker", :Email "coral@griffintest.co.uk"}
+ {:Name "Nikodem Mccarthy", :Email "nikodem@griffintest.co.uk"})
+clj꞉homework.core꞉> (transform-map (proc1 csv-path))
+; Execution error (ClassCastException) at homework.core/transform-map (form-init3889653878003743436.clj:57).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.Map$Entry (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.Map$Entry is in module java.base of loader 'bootstrap')
+clj꞉homework.core꞉> testname
+{:Name "Jonathan Rose"}
+clj꞉homework.core꞉> (testname)
+; Execution error (ArityException) at homework.core/eval10851 (form-init3889653878003743436.clj:121).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> 'testname
+testname
+clj꞉homework.core꞉> (read-json-file json-path)
+({:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk"}
+ {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk"}
+ {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk"}
+ {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk"}
+ {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk"}
+ {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk"}
+ {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk"}
+ {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk"}
+ {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk"}
+ {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk"}
+ {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk"}
+ {:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk"}
+ {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk"}
+ {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk"}
+ {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk"}
+ {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk"}
+ {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk"})
+clj꞉homework.core꞉> 
+#'homework.core/rename-map
+clj꞉homework.core꞉> (rename-map (split-name testname))
+; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> (split-name testname)
+{:FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> 
+#'homework.core/testname
+clj꞉homework.core꞉> (split-name testname)
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> (rename-map (split-name testname))
+; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> 
+#'homework.core/rekey-map
+clj꞉homework.core꞉> (rekey-map (split-name testname))
+; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> testname
+{:Name "Jonathan Rose", :Email "jonathanrose@griffintest.co.uk"}
+clj꞉homework.core꞉> (split-name testname)
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> 
+homework.core/eval10851 (form-init3889653878003743436.clj:121)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:115)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:150)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:1583)
+clj꞉homework.core꞉> 
+#'homework.core/rekey-map
+clj꞉homework.core꞉> rekey-map
+#function[homework.core/rekey-map]
+clj꞉homework.core꞉> (rekey-map)
+; Execution error (ArityException) at homework.core/eval10878 (form-init3889653878003743436.clj:187).
+; Wrong number of args (0) passed to: homework.core/rekey-map
+clj꞉homework.core꞉> (rekey-map )
+#'homework.core/rekey-map
+clj꞉homework.core꞉> (rekey-map (split-name testname))
+; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> 
+#'homework.core/split-name
+clj꞉homework.core꞉> (split-name testname)
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> 
+#'homework.core/rekey-map
+clj꞉homework.core꞉> (rekey-map (split-name testname))
+; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> (map #(rekey-map) (split-name testname))
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: homework.core/eval10896/fn--10897
+clj꞉homework.core꞉> (type (split-name testname))
+clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> (type testname)
+clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> (type {:a 1})
+clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> (type (proc1 csv-path))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (type (rekey-map (split-name testname)))
+; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> 
+#'homework.core/rekey-map
+clj꞉homework.core꞉> (rekey-map (testname))
+; Execution error (ArityException) at homework.core/eval10913 (form-init3889653878003743436.clj:220).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> (rekey-map (split-name testname))
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> (split-name testname)
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> (rekey-map ())
+#'homework.core/rekey-map
+clj꞉homework.core꞉> (rekey-map (splitname (proc1 csv-path)))
+; Syntax error compiling at (c:\Local\Code\homework\.calva\output-window\output.calva-repl:229:32).
+; Unable to resolve symbol: splitname in this context
+clj꞉homework.core꞉> (rekey-map (split-name (proc1 csv-path)))
+; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> #'homework.core/rekey-maps
+clj꞉homework.core꞉> 
+#'homework.core/csv-data-to-maps
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> 
+#'homework.core/rekey-maps
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+
+
+
+                    
+#'homework.core/proc1
+clj꞉homework.core꞉> (proc1 csv-path)
+({:Email "fergus@griffintest.co.uk", :FirstName "Fergus", :LastName "Deleon"}
+ {:Email "eve@griffintest.co.uk", :FirstName "Eve", :LastName "Avila"}
+ {:Email "khadija@griffintest.co.uk", :FirstName "Khadija", :LastName "Velasquez"}
+ {:Email "sophia@griffintest.co.uk", :FirstName "Sophia", :LastName "Lyons"}
+ {:Email "salma@griffintest.co.uk", :FirstName "Salma", :LastName "West"}
+ {:Email "micheal@griffintest.co.uk", :FirstName "Micheal", :LastName "Mcneil"}
+ {:Email "aurora@griffintest.co.uk", :FirstName "Aurora", :LastName "Olson"}
+ {:Email "robin@griffintest.co.uk", :FirstName "Robin", :LastName "Edwards"}
+ {:Email "sarah@griffintest.co.uk", :FirstName "Sarah", :LastName "Ryan"}
+ {:Email "aarav@griffintest.co.uk", :FirstName "Aarav", :LastName "O'Reilly"}
+ {:Email "nancy@griffintest.co.uk", :FirstName "Nancy", :LastName "May"}
+ {:Email "tiffany@griffintest.co.uk", :FirstName "Tiffany", :LastName "Pace"}
+ {:Email "lily@griffintest.co.uk", :FirstName "Lily-May", :LastName "Bass"}
+ {:Email "aamina@griffintest.co.uk", :FirstName "Aamina", :LastName "Pope"}
+ {:Email "michelle@griffintest.co.uk", :FirstName "Michelle", :LastName "Brown"}
+ {:Email "bertie@griffintest.co.uk", :FirstName "Bertie", :LastName "Leblanc"}
+ {:Email "coral@griffintest.co.uk", :FirstName "Coral", :LastName "Tucker"}
+ {:Email "nikodem@griffintest.co.uk", :FirstName "Nikodem", :LastName "Mccarthy"})
+clj꞉homework.core꞉> (map split-name testname)
+; Error printing return value (NullPointerException) at null (REPL:1).
+; null
+clj꞉homework.core꞉> (rekey-maps testname)
+; Error printing return value (NullPointerException) at null (REPL:1).
+; null
+clj꞉homework.core꞉> (split-name testname)
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> (rekey-maps (split-name testname))
+; Error printing return value (NullPointerException) at null (REPL:1).
+; null
+clj꞉homework.core꞉> (split-name testname)
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> 
+; Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> 
+#'homework.core/testname
+clj꞉homework.core꞉> (rekey-maps {:Name "Jonathan Rose"})
+; Error printing return value (NullPointerException) at null (REPL:1).
+; null
+clj꞉homework.core꞉> (rekey-maps ({:Name "Jonathan Rose"}))
+; Execution error (ArityException) at homework.core/eval10946 (form-init3889653878003743436.clj:291).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> (rekey-maps [{:Name "Jonathan Rose"}])
+({:FirstName "Jonathan", :LastName "Rose"})
+clj꞉homework.core꞉> (rekey-maps [{:Name "Jonathan Rose"} {:Name "Joanne Coombes"}])
+({:FirstName "Jonathan", :LastName "Rose"} {:FirstName "Joanne", :LastName "Coombes"})
+clj꞉homework.core꞉> (rekye-maps testname)
+; Syntax error compiling at (c:\Local\Code\homework\.calva\output-window\output.calva-repl:298:21).
+; Unable to resolve symbol: rekye-maps in this context
+clj꞉homework.core꞉> (rekey-maps testname)
+; Error printing return value (NullPointerException) at null (REPL:1).
+; null
+clj꞉homework.core꞉> (rekey-maps [testname])
+({:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"})
+clj꞉homework.core꞉> (list testname)
+({:Name "Jonathan Rose", :Email "jonathanrose@griffintest.co.uk"})
+clj꞉homework.core꞉> (rekey-maps (list testname))
+({:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"})
+clj꞉homework.core꞉> (list? testname)
+false
+clj꞉homework.core꞉> (list? (list testname))
+true
+clj꞉homework.core꞉> (list? (csv-data-to-maps (read-csv-file csv-path)))
+false
+clj꞉homework.core꞉> (csv-data-to-maps (read-csv-file csv-path))
+({:Name "Fergus Deleon", :Email "fergus@griffintest.co.uk"}
+ {:Name "Eve Avila", :Email "eve@griffintest.co.uk"}
+ {:Name "Khadija Velasquez", :Email "khadija@griffintest.co.uk"}
+ {:Name "Sophia Lyons", :Email "sophia@griffintest.co.uk"}
+ {:Name "Salma West", :Email "salma@griffintest.co.uk"}
+ {:Name "Micheal Mcneil", :Email "micheal@griffintest.co.uk"}
+ {:Name "Aurora Olson", :Email "aurora@griffintest.co.uk"}
+ {:Name "Robin Edwards", :Email "robin@griffintest.co.uk"}
+ {:Name "Sarah Ryan", :Email "sarah@griffintest.co.uk"}
+ {:Name "Aarav O'Reilly", :Email "aarav@griffintest.co.uk"}
+ {:Name "Nancy May", :Email "nancy@griffintest.co.uk"}
+ {:Name "Tiffany Pace", :Email "tiffany@griffintest.co.uk"}
+ {:Name "Lily-May Bass", :Email "lily@griffintest.co.uk"}
+ {:Name "Aamina Pope", :Email "aamina@griffintest.co.uk"}
+ {:Name "Michelle Brown", :Email "michelle@griffintest.co.uk"}
+ {:Name "Bertie Leblanc", :Email "bertie@griffintest.co.uk"}
+ {:Name "Coral Tucker", :Email "coral@griffintest.co.uk"}
+ {:Name "Nikodem Mccarthy", :Email "nikodem@griffintest.co.uk"})
+clj꞉homework.core꞉> (type (csv-data-to-maps (read-csv-file csv-path)))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (type (read-json-file json-path))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (type (proc1 csv-path))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (proc1 csv-path)
+({:Email "fergus@griffintest.co.uk", :FirstName "Fergus", :LastName "Deleon"}
+ {:Email "eve@griffintest.co.uk", :FirstName "Eve", :LastName "Avila"}
+ {:Email "khadija@griffintest.co.uk", :FirstName "Khadija", :LastName "Velasquez"}
+ {:Email "sophia@griffintest.co.uk", :FirstName "Sophia", :LastName "Lyons"}
+ {:Email "salma@griffintest.co.uk", :FirstName "Salma", :LastName "West"}
+ {:Email "micheal@griffintest.co.uk", :FirstName "Micheal", :LastName "Mcneil"}
+ {:Email "aurora@griffintest.co.uk", :FirstName "Aurora", :LastName "Olson"}
+ {:Email "robin@griffintest.co.uk", :FirstName "Robin", :LastName "Edwards"}
+ {:Email "sarah@griffintest.co.uk", :FirstName "Sarah", :LastName "Ryan"}
+ {:Email "aarav@griffintest.co.uk", :FirstName "Aarav", :LastName "O'Reilly"}
+ {:Email "nancy@griffintest.co.uk", :FirstName "Nancy", :LastName "May"}
+ {:Email "tiffany@griffintest.co.uk", :FirstName "Tiffany", :LastName "Pace"}
+ {:Email "lily@griffintest.co.uk", :FirstName "Lily-May", :LastName "Bass"}
+ {:Email "aamina@griffintest.co.uk", :FirstName "Aamina", :LastName "Pope"}
+ {:Email "michelle@griffintest.co.uk", :FirstName "Michelle", :LastName "Brown"}
+ {:Email "bertie@griffintest.co.uk", :FirstName "Bertie", :LastName "Leblanc"}
+ {:Email "coral@griffintest.co.uk", :FirstName "Coral", :LastName "Tucker"}
+ {:Email "nikodem@griffintest.co.uk", :FirstName "Nikodem", :LastName "Mccarthy"})
+clj꞉homework.core꞉> (type testname)
+clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> (type (doall (proc1 csv-path)))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (type (list (proc1 csv-path)))
+clojure.lang.PersistentList
+clj꞉homework.core꞉> (list? (list (proc1 csv-path)))
+true
+clj꞉homework.core꞉> (type (doall (read-csv-file csv-path)))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (doall (read-csv-file csv-path))
+(["Name" "Email"]
+ ["Fergus Deleon" "fergus@griffintest.co.uk"]
+ ["Eve Avila" "eve@griffintest.co.uk"]
+ ["Khadija Velasquez" "khadija@griffintest.co.uk"]
+ ["Sophia Lyons" "sophia@griffintest.co.uk"]
+ ["Salma West" "salma@griffintest.co.uk"]
+ ["Micheal Mcneil" "micheal@griffintest.co.uk"]
+ ["Aurora Olson" "aurora@griffintest.co.uk"]
+ ["Robin Edwards" "robin@griffintest.co.uk"]
+ ["Sarah Ryan" "sarah@griffintest.co.uk"]
+ ["Aarav O'Reilly" "aarav@griffintest.co.uk"]
+ ["Nancy May" "nancy@griffintest.co.uk"]
+ ["Tiffany Pace" "tiffany@griffintest.co.uk"]
+ ["Lily-May Bass" "lily@griffintest.co.uk"]
+ ["Aamina Pope" "aamina@griffintest.co.uk"]
+ ["Michelle Brown" "michelle@griffintest.co.uk"]
+ ["Bertie Leblanc" "bertie@griffintest.co.uk"]
+ ["Coral Tucker" "coral@griffintest.co.uk"]
+ ["Nikodem Mccarthy" "nikodem@griffintest.co.uk"])
+clj꞉homework.core꞉> (read-csv-file csv-path)
+(["Name" "Email"]
+ ["Fergus Deleon" "fergus@griffintest.co.uk"]
+ ["Eve Avila" "eve@griffintest.co.uk"]
+ ["Khadija Velasquez" "khadija@griffintest.co.uk"]
+ ["Sophia Lyons" "sophia@griffintest.co.uk"]
+ ["Salma West" "salma@griffintest.co.uk"]
+ ["Micheal Mcneil" "micheal@griffintest.co.uk"]
+ ["Aurora Olson" "aurora@griffintest.co.uk"]
+ ["Robin Edwards" "robin@griffintest.co.uk"]
+ ["Sarah Ryan" "sarah@griffintest.co.uk"]
+ ["Aarav O'Reilly" "aarav@griffintest.co.uk"]
+ ["Nancy May" "nancy@griffintest.co.uk"]
+ ["Tiffany Pace" "tiffany@griffintest.co.uk"]
+ ["Lily-May Bass" "lily@griffintest.co.uk"]
+ ["Aamina Pope" "aamina@griffintest.co.uk"]
+ ["Michelle Brown" "michelle@griffintest.co.uk"]
+ ["Bertie Leblanc" "bertie@griffintest.co.uk"]
+ ["Coral Tucker" "coral@griffintest.co.uk"]
+ ["Nikodem Mccarthy" "nikodem@griffintest.co.uk"])
+clj꞉homework.core꞉> (csv-data-to-maps (read-csv-file csv-path))
+({:Name "Fergus Deleon", :Email "fergus@griffintest.co.uk"}
+ {:Name "Eve Avila", :Email "eve@griffintest.co.uk"}
+ {:Name "Khadija Velasquez", :Email "khadija@griffintest.co.uk"}
+ {:Name "Sophia Lyons", :Email "sophia@griffintest.co.uk"}
+ {:Name "Salma West", :Email "salma@griffintest.co.uk"}
+ {:Name "Micheal Mcneil", :Email "micheal@griffintest.co.uk"}
+ {:Name "Aurora Olson", :Email "aurora@griffintest.co.uk"}
+ {:Name "Robin Edwards", :Email "robin@griffintest.co.uk"}
+ {:Name "Sarah Ryan", :Email "sarah@griffintest.co.uk"}
+ {:Name "Aarav O'Reilly", :Email "aarav@griffintest.co.uk"}
+ {:Name "Nancy May", :Email "nancy@griffintest.co.uk"}
+ {:Name "Tiffany Pace", :Email "tiffany@griffintest.co.uk"}
+ {:Name "Lily-May Bass", :Email "lily@griffintest.co.uk"}
+ {:Name "Aamina Pope", :Email "aamina@griffintest.co.uk"}
+ {:Name "Michelle Brown", :Email "michelle@griffintest.co.uk"}
+ {:Name "Bertie Leblanc", :Email "bertie@griffintest.co.uk"}
+ {:Name "Coral Tucker", :Email "coral@griffintest.co.uk"}
+ {:Name "Nikodem Mccarthy", :Email "nikodem@griffintest.co.uk"})
+clj꞉homework.core꞉> (type (csv-data-to-maps (read-csv-file csv-path)))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (type (doall (csv-data-to-maps (read-csv-file csv-path))))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (type testname)
+clojure.lang.PersistentArrayMap
+clj꞉homework.core꞉> (prn (rekey-maps testname))
+; (; Execution error (NullPointerException) at (REPL:1).
+; null
+clj꞉homework.core꞉> testname
+
+{:Name "Jonathan Rose", :Email "jonathanrose@griffintest.co.uk"}
+clj꞉homework.core꞉> 
+testname
+{:Name "Jonathan Rose", :Email "jonathanrose@griffintest.co.uk"}
+clj꞉homework.core꞉> rekey-maps
+#function[homework.core/rekey-maps]
+clj꞉homework.core꞉> (splitname testname)
+; Syntax error compiling at (c:\Local\Code\homework\.calva\output-window\output.calva-repl:446:21).
+; Unable to resolve symbol: splitname in this context
+clj꞉homework.core꞉> 
+(split-name testname)
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> (let [butt (split-name testname)])
+nil
+clj꞉homework.core꞉> butt
+; Syntax error compiling at (c:\Local\Code\homework\.calva\output-window\output.calva-repl:1:8489).
+; Unable to resolve symbol: butt in this context
+clj꞉homework.core꞉> (let [butt (split-name testname)] butt)
+{:Email "jonathanrose@griffintest.co.uk", :FirstName "Jonathan", :LastName "Rose"}
+clj꞉homework.core꞉> 
+butt
+; Syntax error compiling at (c:\Local\Code\homework\.calva\output-window\output.calva-repl:1:8489).
+; Unable to resolve symbol: butt in this context
+clj꞉homework.core꞉> (proc1 csv-path)
+({:Email "fergus@griffintest.co.uk", :FirstName "Fergus", :LastName "Deleon"}
+ {:Email "eve@griffintest.co.uk", :FirstName "Eve", :LastName "Avila"}
+ {:Email "khadija@griffintest.co.uk", :FirstName "Khadija", :LastName "Velasquez"}
+ {:Email "sophia@griffintest.co.uk", :FirstName "Sophia", :LastName "Lyons"}
+ {:Email "salma@griffintest.co.uk", :FirstName "Salma", :LastName "West"}
+ {:Email "micheal@griffintest.co.uk", :FirstName "Micheal", :LastName "Mcneil"}
+ {:Email "aurora@griffintest.co.uk", :FirstName "Aurora", :LastName "Olson"}
+ {:Email "robin@griffintest.co.uk", :FirstName "Robin", :LastName "Edwards"}
+ {:Email "sarah@griffintest.co.uk", :FirstName "Sarah", :LastName "Ryan"}
+ {:Email "aarav@griffintest.co.uk", :FirstName "Aarav", :LastName "O'Reilly"}
+ {:Email "nancy@griffintest.co.uk", :FirstName "Nancy", :LastName "May"}
+ {:Email "tiffany@griffintest.co.uk", :FirstName "Tiffany", :LastName "Pace"}
+ {:Email "lily@griffintest.co.uk", :FirstName "Lily-May", :LastName "Bass"}
+ {:Email "aamina@griffintest.co.uk", :FirstName "Aamina", :LastName "Pope"}
+ {:Email "michelle@griffintest.co.uk", :FirstName "Michelle", :LastName "Brown"}
+ {:Email "bertie@griffintest.co.uk", :FirstName "Bertie", :LastName "Leblanc"}
+ {:Email "coral@griffintest.co.uk", :FirstName "Coral", :LastName "Tucker"}
+ {:Email "nikodem@griffintest.co.uk", :FirstName "Nikodem", :LastName "Mccarthy"})
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> (proc1 csv-path)
+#{{:Email "khadija@griffintest.co.uk", :FirstName "Khadija", :LastName "Velasquez"}
+  {:Email "sophia@griffintest.co.uk", :FirstName "Sophia", :LastName "Lyons"}
+  {:Email "bertie@griffintest.co.uk", :FirstName "Bertie", :LastName "Leblanc"}
+  {:Email "aamina@griffintest.co.uk", :FirstName "Aamina", :LastName "Pope"}
+  {:Email "eve@griffintest.co.uk", :FirstName "Eve", :LastName "Avila"}
+  {:Email "micheal@griffintest.co.uk", :FirstName "Micheal", :LastName "Mcneil"}
+  {:Email "salma@griffintest.co.uk", :FirstName "Salma", :LastName "West"}
+  {:Email "nancy@griffintest.co.uk", :FirstName "Nancy", :LastName "May"}
+  {:Email "lily@griffintest.co.uk", :FirstName "Lily-May", :LastName "Bass"}
+  {:Email "coral@griffintest.co.uk", :FirstName "Coral", :LastName "Tucker"}
+  {:Email "sarah@griffintest.co.uk", :FirstName "Sarah", :LastName "Ryan"}
+  {:Email "tiffany@griffintest.co.uk", :FirstName "Tiffany", :LastName "Pace"}
+  {:Email "aurora@griffintest.co.uk", :FirstName "Aurora", :LastName "Olson"}
+  {:Email "robin@griffintest.co.uk", :FirstName "Robin", :LastName "Edwards"}
+  {:Email "nikodem@griffintest.co.uk", :FirstName "Nikodem", :LastName "Mccarthy"}
+  {:Email "michelle@griffintest.co.uk", :FirstName "Michelle", :LastName "Brown"}
+  {:Email "aarav@griffintest.co.uk", :FirstName "Aarav", :LastName "O'Reilly"}
+  {:Email "fergus@griffintest.co.uk", :FirstName "Fergus", :LastName "Deleon"}}
+clj꞉homework.core꞉> 
+nil
+clj꞉homework.core꞉> 
+#'homework.core/symmetric-diff
+clj꞉homework.core꞉> 
+#'homework.core/proc1
+clj꞉homework.core꞉> (proc1 csv-path)
+; Execution error (ClassCastException) at homework.core/symmetric-diff (form-init3889653878003743436.clj:56).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IPersistentSet (clojure.lang.LazySeq and clojure.lang.IPersistentSet are in unnamed module of loader 'app')
+clj꞉homework.core꞉> 
+
+#'homework.core/proc1
+clj꞉homework.core꞉> (proc1 csv-path)
+#{{:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk"}
+  {:Email "coral@griffintest.co.uk", :FirstName "Coral", :LastName "Tucker"}
+  {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk"}
+  {:Email "robin@griffintest.co.uk", :FirstName "Robin", :LastName "Edwards"}
+  {:Email "michelle@griffintest.co.uk", :FirstName "Michelle", :LastName "Brown"}}
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main)
+; Execution error (ArityException) at homework.core/eval11031 (form-init3889653878003743436.clj:523).
+; Wrong number of args (0) passed to: homework.core/-main
+clj꞉homework.core꞉> (-main csv-path)
+#{{:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk"}
+  {:Email "coral@griffintest.co.uk", :FirstName "Coral", :LastName "Tucker"}
+  {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk"}
+  {:Email "robin@griffintest.co.uk", :FirstName "Robin", :LastName "Edwards"}
+  {:Email "michelle@griffintest.co.uk", :FirstName "Michelle", :LastName "Brown"}}
+clj꞉homework.core꞉> 
+#'homework.core/read-json-file
+clj꞉homework.core꞉> (assoc testname :Source "CSV")
+{:Name "Jonathan Rose", :Email "jonathanrose@griffintest.co.uk", :Source "CSV"}
+clj꞉homework.core꞉> 
+#'homework.core/read-json-file
+clj꞉homework.core꞉>(read-json-file json-path)
+#function[clojure.core/map/fn--5931]
+clj꞉homework.core꞉> 
+#'homework.core/read-json-file
+clj꞉homework.core꞉> 
+#'homework.core/read-json-file
+clj꞉homework.core꞉> (read-json-file json-path)
+({:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk", :Source "JSON"})
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> (read-csv-file csv-path)
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/assoc (APersistentVector.java:350).
+; Key must be integer
+clj꞉homework.core꞉> 
+#'homework.core/csv-path
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> (read-csv-file csv-path)
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/assoc (APersistentVector.java:350).
+; Key must be integer
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> (read-csv-file csv-path)
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/assoc (APersistentVector.java:350).
+; Key must be integer
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> (read-csv-file csv-path)
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/assoc (APersistentVector.java:350).
+; Key must be integer
+clj꞉homework.core꞉> (read-csv-file csv-path)
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/assoc (APersistentVector.java:350).
+; Key must be integer
+clj꞉homework.core꞉> 
+clojure.main/repl (main.clj:442)
+clojure.main/repl (main.clj:458)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:115)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:150)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:1583)
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> 
+#'homework.core/csv-data-to-maps
+clj꞉homework.core꞉> (-main csv-path)
+#{{:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk"}
+  {:Email "coral@griffintest.co.uk", :FirstName "Coral", :LastName "Tucker"}
+  {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk"}
+  {:Email "robin@griffintest.co.uk", :FirstName "Robin", :LastName "Edwards"}
+  {:Email "michelle@griffintest.co.uk", :FirstName "Michelle", :LastName "Brown"}}
+clj꞉homework.core꞉> 
+#'homework.core/csv-data-to-maps
+clj꞉homework.core꞉> (csv-data-to-maps (read-csv-file csv-path))
+; Execution error (IllegalArgumentException) at homework.core/read-csv-file$fn (form-init3889653878003743436.clj:39).
+; Key must be integer
+clj꞉homework.core꞉> (read-csv-file csv-path)
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/assoc (APersistentVector.java:350).
+; Key must be integer
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> 
+#'homework.core/csv-path
+clj꞉homework.core꞉> (read-csv-file csv-path)
+(["Name" "Email"]
+ ["Fergus Deleon" "fergus@griffintest.co.uk"]
+ ["Eve Avila" "eve@griffintest.co.uk"]
+ ["Khadija Velasquez" "khadija@griffintest.co.uk"]
+ ["Sophia Lyons" "sophia@griffintest.co.uk"]
+ ["Salma West" "salma@griffintest.co.uk"]
+ ["Micheal Mcneil" "micheal@griffintest.co.uk"]
+ ["Aurora Olson" "aurora@griffintest.co.uk"]
+ ["Robin Edwards" "robin@griffintest.co.uk"]
+ ["Sarah Ryan" "sarah@griffintest.co.uk"]
+ ["Aarav O'Reilly" "aarav@griffintest.co.uk"]
+ ["Nancy May" "nancy@griffintest.co.uk"]
+ ["Tiffany Pace" "tiffany@griffintest.co.uk"]
+ ["Lily-May Bass" "lily@griffintest.co.uk"]
+ ["Aamina Pope" "aamina@griffintest.co.uk"]
+ ["Michelle Brown" "michelle@griffintest.co.uk"]
+ ["Bertie Leblanc" "bertie@griffintest.co.uk"]
+ ["Coral Tucker" "coral@griffintest.co.uk"]
+ ["Nikodem Mccarthy" "nikodem@griffintest.co.uk"])
+clj꞉homework.core꞉> (csv-data-to-maps (read-csv-file csv-path))
+({:Name "Fergus Deleon", :Email "fergus@griffintest.co.uk", :Source "CSV"}
+ {:Name "Eve Avila", :Email "eve@griffintest.co.uk", :Source "CSV"}
+ {:Name "Khadija Velasquez", :Email "khadija@griffintest.co.uk", :Source "CSV"}
+ {:Name "Sophia Lyons", :Email "sophia@griffintest.co.uk", :Source "CSV"}
+ {:Name "Salma West", :Email "salma@griffintest.co.uk", :Source "CSV"}
+ {:Name "Micheal Mcneil", :Email "micheal@griffintest.co.uk", :Source "CSV"}
+ {:Name "Aurora Olson", :Email "aurora@griffintest.co.uk", :Source "CSV"}
+ {:Name "Robin Edwards", :Email "robin@griffintest.co.uk", :Source "CSV"}
+ {:Name "Sarah Ryan", :Email "sarah@griffintest.co.uk", :Source "CSV"}
+ {:Name "Aarav O'Reilly", :Email "aarav@griffintest.co.uk", :Source "CSV"}
+ {:Name "Nancy May", :Email "nancy@griffintest.co.uk", :Source "CSV"}
+ {:Name "Tiffany Pace", :Email "tiffany@griffintest.co.uk", :Source "CSV"}
+ {:Name "Lily-May Bass", :Email "lily@griffintest.co.uk", :Source "CSV"}
+ {:Name "Aamina Pope", :Email "aamina@griffintest.co.uk", :Source "CSV"}
+ {:Name "Michelle Brown", :Email "michelle@griffintest.co.uk", :Source "CSV"}
+ {:Name "Bertie Leblanc", :Email "bertie@griffintest.co.uk", :Source "CSV"}
+ {:Name "Coral Tucker", :Email "coral@griffintest.co.uk", :Source "CSV"}
+ {:Name "Nikodem Mccarthy", :Email "nikodem@griffintest.co.uk", :Source "CSV"})
+clj꞉homework.core꞉> (-main csv-path)
+#{{:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk"}
+  {:Email "coral@griffintest.co.uk", :FirstName "Coral", :LastName "Tucker"}
+  {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk"}
+  {:Email "robin@griffintest.co.uk", :FirstName "Robin", :LastName "Edwards"}
+  {:Email "michelle@griffintest.co.uk", :FirstName "Michelle", :LastName "Brown"}}
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main csv-path)
+#{{:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk", :Source "JSON"}
+  {:Email "robin@griffintest.co.uk", :Source "CSV", :FirstName "Robin", :LastName "Edwards"}
+  {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk", :Source "JSON"}
+  {:Email "nikodem@griffintest.co.uk", :Source "CSV", :FirstName "Nikodem", :LastName "Mccarthy"}
+  {:Email "aamina@griffintest.co.uk", :Source "CSV", :FirstName "Aamina", :LastName "Pope"}
+  {:Email "coral@griffintest.co.uk", :Source "CSV", :FirstName "Coral", :LastName "Tucker"}
+  {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk", :Source "JSON"}
+  {:Email "fergus@griffintest.co.uk", :Source "CSV", :FirstName "Fergus", :LastName "Deleon"}
+  {:Email "lily@griffintest.co.uk", :Source "CSV", :FirstName "Lily-May", :LastName "Bass"}
+  {:Email "michelle@griffintest.co.uk", :Source "CSV", :FirstName "Michelle", :LastName "Brown"}
+  {:Email "sarah@griffintest.co.uk", :Source "CSV", :FirstName "Sarah", :LastName "Ryan"}
+  {:Email "micheal@griffintest.co.uk", :Source "CSV", :FirstName "Micheal", :LastName "Mcneil"}
+  {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk", :Source "JSON"}
+  {:Email "khadija@griffintest.co.uk", :Source "CSV", :FirstName "Khadija", :LastName "Velasquez"}
+  {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk", :Source "JSON"}
+  {:Email "aurora@griffintest.co.uk", :Source "CSV", :FirstName "Aurora", :LastName "Olson"}
+  {:Email "eve@griffintest.co.uk", :Source "CSV", :FirstName "Eve", :LastName "Avila"}
+  {:Email "tiffany@griffintest.co.uk", :Source "CSV", :FirstName "Tiffany", :LastName "Pace"}
+  {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk", :Source "JSON"}
+  {:Email "salma@griffintest.co.uk", :Source "CSV", :FirstName "Salma", :LastName "West"}
+  {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk", :Source "JSON"}
+  {:Email "aarav@griffintest.co.uk", :Source "CSV", :FirstName "Aarav", :LastName "O'Reilly"}
+  {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk", :Source "JSON"}
+  {:Email "sophia@griffintest.co.uk", :Source "CSV", :FirstName "Sophia", :LastName "Lyons"}
+  {:Email "bertie@griffintest.co.uk", :Source "CSV", :FirstName "Bertie", :LastName "Leblanc"}
+  {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk", :Source "JSON"}
+  {:Email "nancy@griffintest.co.uk", :Source "CSV", :FirstName "Nancy", :LastName "May"}}
+clj꞉homework.core꞉> 
+#'homework.core/extract-emails
+clj꞉homework.core꞉> 
+#'homework.core/create-sets-emails
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main csv-path)
+#{"aamina@griffintest.co.uk"
+  "michelle@griffintest.co.uk"
+  "eve@griffintest.co.uk"
+  "aarav@griffintest.co.uk"
+  "sarah@griffintest.co.uk"
+  "salma@griffintest.co.uk"
+  "lily@griffintest.co.uk"
+  "nikodem@griffintest.co.uk"
+  "bertie@griffintest.co.uk"
+  "sophia@griffintest.co.uk"
+  "tiffany@griffintest.co.uk"
+  "aurora@griffintest.co.uk"
+  "robin@griffintest.co.uk"
+  "coral@griffintest.co.uk"
+  "fergus@griffintest.co.uk"
+  "khadija@griffintest.co.uk"
+  "nancy@griffintest.co.uk"
+  "micheal@griffintest.co.uk"}
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main csv-path)
+#{"michelle@griffintest.co.uk"
+  "justin@griffintest.co.uk"
+  "robin@griffintest.co.uk"
+  "coral@griffintest.co.uk"
+  "jean@griffintest.co.uk"}
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main csv-path json-path)
+#{"michelle@griffintest.co.uk"
+  "justin@griffintest.co.uk"
+  "robin@griffintest.co.uk"
+  "coral@griffintest.co.uk"
+  "jean@griffintest.co.uk"}
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main csv-path csv-json)
+; Syntax error compiling at (c:\Local\Code\homework\.calva\output-window\output.calva-repl:743:21).
+; Unable to resolve symbol: csv-json in this context
+clj꞉homework.core꞉> (-main csv-path json-path)
+#{{:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk", :Source "JSON"}
+  {:Email "robin@griffintest.co.uk", :Source "CSV", :FirstName "Robin", :LastName "Edwards"}
+  {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk", :Source "JSON"}
+  {:Email "nikodem@griffintest.co.uk", :Source "CSV", :FirstName "Nikodem", :LastName "Mccarthy"}
+  {:Email "aamina@griffintest.co.uk", :Source "CSV", :FirstName "Aamina", :LastName "Pope"}
+  {:Email "coral@griffintest.co.uk", :Source "CSV", :FirstName "Coral", :LastName "Tucker"}
+  {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk", :Source "JSON"}
+  {:Email "fergus@griffintest.co.uk", :Source "CSV", :FirstName "Fergus", :LastName "Deleon"}
+  {:Email "lily@griffintest.co.uk", :Source "CSV", :FirstName "Lily-May", :LastName "Bass"}
+  {:Email "michelle@griffintest.co.uk", :Source "CSV", :FirstName "Michelle", :LastName "Brown"}
+  {:Email "sarah@griffintest.co.uk", :Source "CSV", :FirstName "Sarah", :LastName "Ryan"}
+  {:Email "micheal@griffintest.co.uk", :Source "CSV", :FirstName "Micheal", :LastName "Mcneil"}
+  {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk", :Source "JSON"}
+  {:Email "khadija@griffintest.co.uk", :Source "CSV", :FirstName "Khadija", :LastName "Velasquez"}
+  {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk", :Source "JSON"}
+  {:Email "aurora@griffintest.co.uk", :Source "CSV", :FirstName "Aurora", :LastName "Olson"}
+  {:Email "eve@griffintest.co.uk", :Source "CSV", :FirstName "Eve", :LastName "Avila"}
+  {:Email "tiffany@griffintest.co.uk", :Source "CSV", :FirstName "Tiffany", :LastName "Pace"}
+  {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk", :Source "JSON"}
+  {:Email "salma@griffintest.co.uk", :Source "CSV", :FirstName "Salma", :LastName "West"}
+  {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk", :Source "JSON"}
+  {:Email "aarav@griffintest.co.uk", :Source "CSV", :FirstName "Aarav", :LastName "O'Reilly"}
+  {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk", :Source "JSON"}
+  {:Email "sophia@griffintest.co.uk", :Source "CSV", :FirstName "Sophia", :LastName "Lyons"}
+  {:Email "bertie@griffintest.co.uk", :Source "CSV", :FirstName "Bertie", :LastName "Leblanc"}
+  {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk", :Source "JSON"}
+  {:Email "nancy@griffintest.co.uk", :Source "CSV", :FirstName "Nancy", :LastName "May"}}
+clj꞉homework.core꞉> 
+#'homework.core/c-path
+clj꞉homework.core꞉> 
+#'homework.core/j-path
+clj꞉homework.core꞉> 
+#'homework.core/split-name
+clj꞉homework.core꞉> 
+; Syntax error compiling at (c:\Local\Code\homework\src\homework\core.clj:1:8489).
+; Unable to resolve symbol: map-splitname in this context
+clj꞉homework.core꞉> 
+#'homework.core/map-splitname
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+#{{:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk", :Source "JSON"}
+  {:Email "robin@griffintest.co.uk", :Source "CSV", :FirstName "Robin", :LastName "Edwards"}
+  {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk", :Source "JSON"}
+  {:Email "nikodem@griffintest.co.uk", :Source "CSV", :FirstName "Nikodem", :LastName "Mccarthy"}
+  {:Email "aamina@griffintest.co.uk", :Source "CSV", :FirstName "Aamina", :LastName "Pope"}
+  {:Email "coral@griffintest.co.uk", :Source "CSV", :FirstName "Coral", :LastName "Tucker"}
+  {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk", :Source "JSON"}
+  {:Email "fergus@griffintest.co.uk", :Source "CSV", :FirstName "Fergus", :LastName "Deleon"}
+  {:Email "lily@griffintest.co.uk", :Source "CSV", :FirstName "Lily-May", :LastName "Bass"}
+  {:Email "michelle@griffintest.co.uk", :Source "CSV", :FirstName "Michelle", :LastName "Brown"}
+  {:Email "sarah@griffintest.co.uk", :Source "CSV", :FirstName "Sarah", :LastName "Ryan"}
+  {:Email "micheal@griffintest.co.uk", :Source "CSV", :FirstName "Micheal", :LastName "Mcneil"}
+  {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk", :Source "JSON"}
+  {:Email "khadija@griffintest.co.uk", :Source "CSV", :FirstName "Khadija", :LastName "Velasquez"}
+  {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk", :Source "JSON"}
+  {:Email "aurora@griffintest.co.uk", :Source "CSV", :FirstName "Aurora", :LastName "Olson"}
+  {:Email "eve@griffintest.co.uk", :Source "CSV", :FirstName "Eve", :LastName "Avila"}
+  {:Email "tiffany@griffintest.co.uk", :Source "CSV", :FirstName "Tiffany", :LastName "Pace"}
+  {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk", :Source "JSON"}
+  {:Email "salma@griffintest.co.uk", :Source "CSV", :FirstName "Salma", :LastName "West"}
+  {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk", :Source "JSON"}
+  {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk", :Source "JSON"}
+  {:Email "aarav@griffintest.co.uk", :Source "CSV", :FirstName "Aarav", :LastName "O'Reilly"}
+  {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk", :Source "JSON"}
+  {:Email "sophia@griffintest.co.uk", :Source "CSV", :FirstName "Sophia", :LastName "Lyons"}
+  {:Email "bertie@griffintest.co.uk", :Source "CSV", :FirstName "Bertie", :LastName "Leblanc"}
+  {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk", :Source "JSON"}
+  {:Email "nancy@griffintest.co.uk", :Source "CSV", :FirstName "Nancy", :LastName "May"}}
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+#{"michelle@griffintest.co.uk"
+  "justin@griffintest.co.uk"
+  "robin@griffintest.co.uk"
+  "coral@griffintest.co.uk"
+  "jean@griffintest.co.uk"}
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+; #{aamina@griffintest.co.uk michelle@griffintest.co.uk eve@griffintest.co.uk aarav@griffintest.co.uk sarah@griffintest.co.uk salma@griffintest.co.uk lily@griffintest.co.uk nikodem@griffintest.co.uk bertie@griffintest.co.uk sophia@griffintest.co.uk tiffany@griffintest.co.uk aurora@griffintest.co.uk robin@griffintest.co.uk coral@griffintest.co.uk fergus@griffintest.co.uk khadija@griffintest.co.uk nancy@griffintest.co.uk micheal@griffintest.co.uk}
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+; #{aamina@griffintest.co.uk michelle@griffintest.co.uk eve@griffintest.co.uk aarav@griffintest.co.uk sarah@griffintest.co.uk salma@griffintest.co.uk lily@griffintest.co.uk nikodem@griffintest.co.uk bertie@griffintest.co.uk sophia@griffintest.co.uk tiffany@griffintest.co.uk aurora@griffintest.co.uk robin@griffintest.co.uk coral@griffintest.co.uk fergus@griffintest.co.uk khadija@griffintest.co.uk nancy@griffintest.co.uk micheal@griffintest.co.uk}
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+()
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+({:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk", :Source "JSON"}
+ {:Email "nikodem@griffintest.co.uk", :Source "CSV", :FirstName "Nikodem", :LastName "Mccarthy"}
+ {:Email "aamina@griffintest.co.uk", :Source "CSV", :FirstName "Aamina", :LastName "Pope"}
+ {:Email "fergus@griffintest.co.uk", :Source "CSV", :FirstName "Fergus", :LastName "Deleon"}
+ {:Email "lily@griffintest.co.uk", :Source "CSV", :FirstName "Lily-May", :LastName "Bass"}
+ {:Email "sarah@griffintest.co.uk", :Source "CSV", :FirstName "Sarah", :LastName "Ryan"}
+ {:Email "micheal@griffintest.co.uk", :Source "CSV", :FirstName "Micheal", :LastName "Mcneil"}
+ {:Email "khadija@griffintest.co.uk", :Source "CSV", :FirstName "Khadija", :LastName "Velasquez"}
+ {:Email "aurora@griffintest.co.uk", :Source "CSV", :FirstName "Aurora", :LastName "Olson"}
+ {:Email "eve@griffintest.co.uk", :Source "CSV", :FirstName "Eve", :LastName "Avila"}
+ {:Email "tiffany@griffintest.co.uk", :Source "CSV", :FirstName "Tiffany", :LastName "Pace"}
+ {:Email "salma@griffintest.co.uk", :Source "CSV", :FirstName "Salma", :LastName "West"}
+ {:Email "aarav@griffintest.co.uk", :Source "CSV", :FirstName "Aarav", :LastName "O'Reilly"}
+ {:Email "sophia@griffintest.co.uk", :Source "CSV", :FirstName "Sophia", :LastName "Lyons"}
+ {:Email "bertie@griffintest.co.uk", :Source "CSV", :FirstName "Bertie", :LastName "Leblanc"}
+ {:Email "nancy@griffintest.co.uk", :Source "CSV", :FirstName "Nancy", :LastName "May"})
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+({:Email "robin@griffintest.co.uk", :Source "CSV", :FirstName "Robin", :LastName "Edwards"}
+ {:Email "nikodem@griffintest.co.uk", :Source "CSV", :FirstName "Nikodem", :LastName "Mccarthy"}
+ {:Email "aamina@griffintest.co.uk", :Source "CSV", :FirstName "Aamina", :LastName "Pope"}
+ {:Email "coral@griffintest.co.uk", :Source "CSV", :FirstName "Coral", :LastName "Tucker"}
+ {:Email "fergus@griffintest.co.uk", :Source "CSV", :FirstName "Fergus", :LastName "Deleon"}
+ {:Email "lily@griffintest.co.uk", :Source "CSV", :FirstName "Lily-May", :LastName "Bass"}
+ {:Email "michelle@griffintest.co.uk", :Source "CSV", :FirstName "Michelle", :LastName "Brown"}
+ {:Email "sarah@griffintest.co.uk", :Source "CSV", :FirstName "Sarah", :LastName "Ryan"}
+ {:Email "micheal@griffintest.co.uk", :Source "CSV", :FirstName "Micheal", :LastName "Mcneil"}
+ {:Email "khadija@griffintest.co.uk", :Source "CSV", :FirstName "Khadija", :LastName "Velasquez"}
+ {:Email "aurora@griffintest.co.uk", :Source "CSV", :FirstName "Aurora", :LastName "Olson"}
+ {:Email "eve@griffintest.co.uk", :Source "CSV", :FirstName "Eve", :LastName "Avila"}
+ {:Email "tiffany@griffintest.co.uk", :Source "CSV", :FirstName "Tiffany", :LastName "Pace"}
+ {:Email "salma@griffintest.co.uk", :Source "CSV", :FirstName "Salma", :LastName "West"}
+ {:Email "aarav@griffintest.co.uk", :Source "CSV", :FirstName "Aarav", :LastName "O'Reilly"}
+ {:Email "sophia@griffintest.co.uk", :Source "CSV", :FirstName "Sophia", :LastName "Lyons"}
+ {:Email "bertie@griffintest.co.uk", :Source "CSV", :FirstName "Bertie", :LastName "Leblanc"}
+ {:Email "nancy@griffintest.co.uk", :Source "CSV", :FirstName "Nancy", :LastName "May"}
+ {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk", :Source "JSON"})
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+({:Email "robin@griffintest.co.uk", :Source "CSV", :FirstName "Robin", :LastName "Edwards"}
+ {:Email "coral@griffintest.co.uk", :Source "CSV", :FirstName "Coral", :LastName "Tucker"}
+ {:Email "michelle@griffintest.co.uk", :Source "CSV", :FirstName "Michelle", :LastName "Brown"}
+ {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk", :Source "JSON"})
+clj꞉homework.core꞉> 
+; Syntax error compiling at (c:\Local\Code\homework\src\homework\core.clj:72:5).
+; No such var: csv/write-cvs
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main c-path j-path)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main c-path j-path)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main c-path j-path)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main c-path j-path)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+; Execution error (IllegalArgumentException) at clojure.data.csv/write-csv (csv.clj:127).
+; No value supplied for key: {:separator \;}
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main c-path j-path)
+; Execution error (IllegalArgumentException) at clojure.data.csv/write-csv (csv.clj:127).
+; No value supplied for key: {:separator \;}
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main c-path j-path)
+; Execution error (IllegalArgumentException) at clojure.data.csv/write-csv (csv.clj:127).
+; No value supplied for key: {:separator \;}
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main c-path j-path)
+; Execution error (IllegalArgumentException) at clojure.data.csv/write-csv (csv.clj:127).
+; No value supplied for key: {:separator \;}
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main c-path j-path)
+; Execution error (IllegalArgumentException) at clojure.data.csv/write-csv (csv.clj:127).
+; No value supplied for key: {:separator "p"}
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> 
+#'homework.core/cp
+clj꞉homework.core꞉> 
+#'homework.core/jp
+clj꞉homework.core꞉> (-main cp jp)
+; Execution error (IllegalArgumentException) at clojure.data.csv/write-csv (csv.clj:127).
+; No value supplied for key: {:separator "p"}
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉>(-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/read-json-file
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> (read-json-file jp)
+({:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk"}
+ {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk"}
+ {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk"}
+ {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk"}
+ {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk"}
+ {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk"}
+ {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk"}
+ {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk"}
+ {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk"}
+ {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk"}
+ {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk"}
+ {:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk"}
+ {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk"}
+ {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk"}
+ {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk"}
+ {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk"}
+ {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk"})
+clj꞉homework.core꞉> 
+#'homework.core/read-json-file
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+; Syntax error compiling at (c:\Local\Code\homework\src\homework\core.clj:1:8489).
+; Unable to resolve symbol: results in this context
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> 
+; Syntax error compiling at (c:\Local\Code\homework\src\homework\core.clj:1:8489).
+; Unable to resolve symbol: results in this context
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> 
+; Syntax error compiling at (c:\Local\Code\homework\src\homework\core.clj:1:8489).
+; Unable to resolve symbol: results in this context
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+; ({:Email robin@griffintest.co.uk, :Source CSV, :FirstName Robin, :LastName Edwards} {:Email coral@griffintest.co.uk, :Source CSV, :FirstName Coral, :LastName Tucker} {:Email michelle@griffintest.co.uk, :Source CSV, :FirstName Michelle, :LastName Brown} {:FirstName Justin, :LastName Nielsen, :Email justin@griffintest.co.uk, :Source JSON} {:FirstName Jean, :LastName Underwood, :Email jean@griffintest.co.uk, :Source JSON})
+nil
+clj꞉homework.core꞉> 
+; Syntax error compiling at (c:\Local\Code\homework\src\homework\core.clj:87:5).
+; Unable to resolve symbol: data in this context
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+; ({:Email robin@griffintest.co.uk, :Source CSV, :FirstName Robin, :LastName Edwards} {:Email nikodem@griffintest.co.uk, :Source CSV, :FirstName Nikodem, :LastName Mccarthy} {:Email aamina@griffintest.co.uk, :Source CSV, :FirstName Aamina, :LastName Pope} {:Email coral@griffintest.co.uk, :Source CSV, :FirstName Coral, :LastName Tucker} {:Email fergus@griffintest.co.uk, :Source CSV, :FirstName Fergus, :LastName Deleon} {:Email lily@griffintest.co.uk, :Source CSV, :FirstName Lily-May, :LastName Bass} {:Email michelle@griffintest.co.uk, :Source CSV, :FirstName Michelle, :LastName Brown} {:Email sarah@griffintest.co.uk, :Source CSV, :FirstName Sarah, :LastName Ryan} {:Email micheal@griffintest.co.uk, :Source CSV, :FirstName Micheal, :LastName Mcneil} {:Email khadija@griffintest.co.uk, :Source CSV, :FirstName Khadija, :LastName Velasquez} {:Email aurora@griffintest.co.uk, :Source CSV, :FirstName Aurora, :LastName Olson} {:Email eve@griffintest.co.uk, :Source CSV, :FirstName Eve, :LastName Avila} {:Email tiffany@griffintest.co.uk, :Source CSV, :FirstName Tiffany, :LastName Pace} {:Email salma@griffintest.co.uk, :Source CSV, :FirstName Salma, :LastName West} {:Email aarav@griffintest.co.uk, :Source CSV, :FirstName Aarav, :LastName O'Reilly} {:Email sophia@griffintest.co.uk, :Source CSV, :FirstName Sophia, :LastName Lyons} {:Email bertie@griffintest.co.uk, :Source CSV, :FirstName Bertie, :LastName Leblanc} {:Email nancy@griffintest.co.uk, :Source CSV, :FirstName Nancy, :LastName May} {:FirstName Justin, :LastName Nielsen, :Email justin@griffintest.co.uk, :Source JSON} {:FirstName Micheal, :LastName Mcneil, :Email micheal@griffintest.co.uk, :Source JSON} {:FirstName Fergus, :LastName Deleon, :Email fergus@griffintest.co.uk, :Source JSON} {:FirstName Eve, :LastName Avila, :Email eve@griffintest.co.uk, :Source JSON} {:FirstName Bertie, :LastName Leblanc, :Email bertie@griffintest.co.uk, :Source JSON} {:FirstName Salma, :LastName West, :Email salma@griffintest.co.uk, :Source JSON} {:FirstName Sarah, :LastName Ryan, :Email sarah@griffintest.co.uk, :Source JSON} {:FirstName Khadija, :LastName Velasquez, :Email khadija@griffintest.co.uk, :Source JSON} {:FirstName Tiffany, :LastName Pace, :Email tiffany@griffintest.co.uk, :Source JSON} {:FirstName Sophia, :LastName Lyons, :Email sophia@griffintest.co.uk, :Source JSON} {:FirstName Nancy, :LastName May, :Email nancy@griffintest.co.uk, :Source JSON} {:FirstName Aarav, :LastName O'Reilly, :Email aarav@griffintest.co.uk, :Source JSON} {:FirstName Aurora, :LastName Olson, :Email aurora@griffintest.co.uk, :Source JSON} {:FirstName Nikodem, :LastName Mccarthy, :Email nikodem@griffintest.co.uk, :Source JSON} {:FirstName Lily-May, :LastName Bass, :Email lily@griffintest.co.uk, :Source JSON} {:FirstName Aamina, :LastName Pope, :Email aamina@griffintest.co.uk, :Source JSON} {:FirstName Jean, :LastName Underwood, :Email jean@griffintest.co.uk, :Source JSON})
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+; #{michelle@griffintest.co.uk justin@griffintest.co.uk robin@griffintest.co.uk coral@griffintest.co.uk jean@griffintest.co.uk}
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+; #{michelle@griffintest.co.uk justin@griffintest.co.uk robin@griffintest.co.uk coral@griffintest.co.uk jean@griffintest.co.uk}
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main cp jp)
+; #{michelle@griffintest.co.uk justin@griffintest.co.uk robin@griffintest.co.uk coral@griffintest.co.uk jean@griffintest.co.uk}
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main cp jp)
+nil
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> 
+#'homework.core/csv-path
+clj꞉homework.core꞉> 
+#'homework.core/json-path
+clj꞉homework.core꞉> 
+#'homework.core/testname
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> (type (read-csv-file csv-path))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (read-csv-file csv-path)
+(["Name" "Email"]
+ ["Fergus Deleon" "fergus@griffintest.co.uk"]
+ ["Eve Avila" "eve@griffintest.co.uk"]
+ ["Khadija Velasquez" "khadija@griffintest.co.uk"]
+ ["Sophia Lyons" "sophia@griffintest.co.uk"]
+ ["Salma West" "salma@griffintest.co.uk"]
+ ["Micheal Mcneil" "micheal@griffintest.co.uk"]
+ ["Aurora Olson" "aurora@griffintest.co.uk"]
+ ["Robin Edwards" "robin@griffintest.co.uk"]
+ ["Sarah Ryan" "sarah@griffintest.co.uk"]
+ ["Aarav O'Reilly" "aarav@griffintest.co.uk"]
+ ["Nancy May" "nancy@griffintest.co.uk"]
+ ["Tiffany Pace" "tiffany@griffintest.co.uk"]
+ ["Lily-May Bass" "lily@griffintest.co.uk"]
+ ["Aamina Pope" "aamina@griffintest.co.uk"]
+ ["Michelle Brown" "michelle@griffintest.co.uk"]
+ ["Bertie Leblanc" "bertie@griffintest.co.uk"]
+ ["Coral Tucker" "coral@griffintest.co.uk"]
+ ["Nikodem Mccarthy" "nikodem@griffintest.co.uk"])
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> 
+#'homework.core/read-csv-file
+clj꞉homework.core꞉> (type (json/parse-stream json-path))
+; Execution error (ClassCastException) at cheshire.core/parse-stream (core.clj:253).
+; class java.lang.String cannot be cast to class java.io.Reader (java.lang.String and java.io.Reader are in module java.base of loader 'bootstrap')
+clj꞉homework.core꞉> 
+#'homework.core/json-path
+clj꞉homework.core꞉> (json/parse-steam)
+; Syntax error compiling at (c:\Local\Code\homework\.calva\output-window\output.calva-repl:1183:21).
+; No such var: json/parse-steam
+clj꞉homework.core꞉> (json/parse-stream)
+; Execution error (ArityException) at homework.core/eval11477 (form-init3889653878003743436.clj:1186).
+; Wrong number of args (0) passed to: cheshire.core/parse-stream
+clj꞉homework.core꞉> (type (read-json-file json-path))
+clojure.lang.LazySeq
+clj꞉homework.core꞉> (read-json-file json-path)
+({:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Micheal", :LastName "Mcneil", :Email "micheal@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Fergus", :LastName "Deleon", :Email "fergus@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Eve", :LastName "Avila", :Email "eve@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Bertie", :LastName "Leblanc", :Email "bertie@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Salma", :LastName "West", :Email "salma@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Sarah", :LastName "Ryan", :Email "sarah@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Khadija", :LastName "Velasquez", :Email "khadija@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Tiffany", :LastName "Pace", :Email "tiffany@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Sophia", :LastName "Lyons", :Email "sophia@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Nancy", :LastName "May", :Email "nancy@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aarav", :LastName "O'Reilly", :Email "aarav@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aurora", :LastName "Olson", :Email "aurora@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Nikodem", :LastName "Mccarthy", :Email "nikodem@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Lily-May", :LastName "Bass", :Email "lily@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Aamina", :LastName "Pope", :Email "aamina@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk", :Source "JSON"})
+clj꞉homework.core꞉> 
+#'homework.core/csv-seq-to-maps
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> 
+; Syntax error compiling at (c:\Local\Code\homework\src\homework\core.clj:67:3).
+; Unable to resolve symbol: splitname in this context
+clj꞉homework.core꞉> 
+#'homework.core/splitname
+clj꞉homework.core꞉> 
+#'homework.core/splitname
+clj꞉homework.core꞉> 
+#'homework.core/map-splitname
+clj꞉homework.core꞉> 
+#'homework.core/extract-emails
+clj꞉homework.core꞉> 
+#'homework.core/symmetric-diff
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> (-main csv-path json-path)
+; ({:Email robin@griffintest.co.uk, :Source CSV, :FirstName Robin, :LastName Edwards} {:Email coral@griffintest.co.uk, :Source CSV, :FirstName Coral, :LastName Tucker} {:Email michelle@griffintest.co.uk, :Source CSV, :FirstName Michelle, :LastName Brown} {:FirstName Justin, :LastName Nielsen, :Email justin@griffintest.co.uk, :Source JSON} {:FirstName Jean, :LastName Underwood, :Email jean@griffintest.co.uk, :Source JSON})
+nil
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main csv-path json-path)
+({:Email "robin@griffintest.co.uk", :Source "CSV", :FirstName "Robin", :LastName "Edwards"}
+ {:Email "coral@griffintest.co.uk", :Source "CSV", :FirstName "Coral", :LastName "Tucker"}
+ {:Email "michelle@griffintest.co.uk", :Source "CSV", :FirstName "Michelle", :LastName "Brown"}
+ {:FirstName "Justin", :LastName "Nielsen", :Email "justin@griffintest.co.uk", :Source "JSON"}
+ {:FirstName "Jean", :LastName "Underwood", :Email "jean@griffintest.co.uk", :Source "JSON"})
+clj꞉homework.core꞉> 
+#'homework.core/write-csv
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> (-main csv-path json-path)
+nil
+clj꞉homework.core꞉> 
