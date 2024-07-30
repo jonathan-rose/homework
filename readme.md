@@ -10,11 +10,11 @@ The brief:
 
 Open the 'release' folder. In a terminal, run:
 
-    `$ java -jar homework-v1.0-standalone "google.csv" "hr.json"`
+    $ java -jar homework-v1.0-standalone "google.csv" "hr.json"
 
 `output.csv` contains entries that are unique to either the CSV or the JSON, with a note identifying which source they come from.
 
-## To Do
+## To Do / Potential Improvements
 
 - Consolidate file readers and make them file-type independent
 - Change hard-coded filepaths.
@@ -22,3 +22,4 @@ Open the 'release' folder. In a terminal, run:
 - Allow user to specify output.csv location.
 - Remove leading colons from keywords in output.
 - Make code generic and not tailored specifically to :Emails key
+- Error handling
