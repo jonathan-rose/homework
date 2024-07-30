@@ -6,14 +6,6 @@
             [cheshire.core :as json])
   (:gen-class))
 
-;; Potential improvements:
-;;
-;; Consolidate file readers so they are file-type independent
-;; Change hard-coded filepaths.
-;; Allow user to specify output.csv location.
-;; Remove leading colons from keywords in output.
-;; Make code generic and not tailored specifically to :Emails key
-
 (def csv-path "resources/data/google.csv")
 
 (def json-path "resources/data/hr.json")
@@ -90,17 +82,22 @@
 
 (defn -main
   "Given the filepath to a CSV file and a JSON file of user data, 
-   returns the entries that are not shared between the two files."
-  [csv json]
-  (let [c (-> csv
-              (read-csv-file)
-              (csv-seq-to-maps)
-              (map-splitname)
-              (set))
-        j (read-json-file json)
-        ce (extract-emails c)
-        je (extract-emails j)
-        sd (symmetric-diff ce je)
-        alldata (concat c j)
-        results (filter #(contains? sd (:Email %)) alldata)]
-    (write-csv results)))
+   returns the entries that are not shared between the two files.
+   Arguments should be CSV first, then JSON."
+  [& args]
+  (if (not= (count args) 2)
+    (println "Please provide a CSV location followed by a JSON location.")
+    (let [csv (first args)
+          json (second args)
+          c (-> csv
+                (read-csv-file)
+                (csv-seq-to-maps)
+                (map-splitname)
+                (set))
+          j (read-json-file json)
+          ce (extract-emails c)
+          je (extract-emails j)
+          sd (symmetric-diff ce je)
+          alldata (concat c j)
+          results (filter #(contains? sd (:Email %)) alldata)]
+      (write-csv results))))

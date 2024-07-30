@@ -8,37 +8,17 @@ The brief:
 
 ## Usage
 
-FIXME: explanation
+Open the 'release' folder. In a terminal, run:
 
-    $ java -jar homework-0.1.0-standalone.jar [args]
+    `$ java -jar homework-v1.0-standalone "google.csv" "hr.json"`
 
-## Options
+`output.csv` contains entries that are unique to either the CSV or the JSON, with a note identifying which source they come from.
 
-FIXME: listing of options this app accepts.
+## To Do
 
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2024 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+- Consolidate file readers and make them file-type independent
+- Change hard-coded filepaths.
+- Change -main to take filepaths in either order.
+- Allow user to specify output.csv location.
+- Remove leading colons from keywords in output.
+- Make code generic and not tailored specifically to :Emails key

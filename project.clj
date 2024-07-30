@@ -1,4 +1,4 @@
-(defproject homework "0.1.0-SNAPSHOT"
+(defproject homework "v1.0"
   :description "Griffin Homework - Compare CSV and JSON"
   :url "http://github.com/jonathan-rose/homework"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"

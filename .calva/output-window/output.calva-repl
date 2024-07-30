@@ -1247,3 +1247,8 @@ clj꞉homework.core꞉> 
 clj꞉homework.core꞉> (-main csv-path json-path)
 nil
 clj꞉homework.core꞉> 
+; Syntax error compiling at (c:\Local\Code\homework\src\homework\core.clj:96:15).
+; Unable to resolve symbol: csv in this context
+clj꞉homework.core꞉> 
+#'homework.core/-main
+clj꞉homework.core꞉> 
