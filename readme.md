@@ -10,7 +10,7 @@ The brief:
 
 Open the 'release' folder. In a terminal, run:
 
-    $ java -jar homework-v1.0-standalone "google.csv" "hr.json"
+    $ java -jar homework-v1.0-standalone.jar "google.csv" "hr.json"
 
 `output.csv` contains entries that are unique to either the CSV or the JSON, with a note identifying which source they come from.
 
